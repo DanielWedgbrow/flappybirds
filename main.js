@@ -86,6 +86,12 @@ var mainState = {
 		//Automatically kill pipe when it is not longer visible
 		pipe.checkWorldBounds = true;
 		pipe.outOfBoundsKill = true;
+        
+        //calls the restartGame function each time the bird dies
+
+        game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame,
+
+        null, this);
 	},
 	
 	//Many pipes
@@ -101,7 +107,7 @@ var mainState = {
         
         //Increases score as new pipes are created
 
-        this.score += 10000;
+        this.score += 1;
 
         this.labelScore.text = this.score;
 	},
