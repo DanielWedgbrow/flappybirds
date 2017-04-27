@@ -47,7 +47,7 @@ var mainState = {
         
         //Call the 'restartGame' function
         if (this.bird.y <0 || this.bird.y >490)
-            (this.restartGame();
+            this.restartGame();
     },
              
     jump: function() {
