@@ -39,6 +39,14 @@ var mainState = {
 		
 		//Timer for pipes
 		this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
+        
+        //Score
+
+        this.score = 0;
+
+        this.labelScore = game.add.text(20, 20, "0",
+
+        { font: "30px Arial", fill: "#ffffff" });   
 	},
 	
 	update: function() {
@@ -90,6 +98,12 @@ var mainState = {
 		for (var i = 0; i < 8; i++)
 			if (i != hole && i != hole +1)
 				this.addOnePipe(400, i * 60 + 10);
+        
+        //Increases score as new pipes are created
+
+        this.score += 10000;
+
+        this.labelScore.text = this.score;
 	},
 };
 
