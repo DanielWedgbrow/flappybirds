@@ -16,7 +16,7 @@ var mainState = {
 		//Change the background colour of the game to blue - for now!
 		game.stage.backgroundColor = '#71c5cf';
         
-        this.game.stage.scale.pageAlignHorizontally = true;this.game.stage.scale.pageAlignVeritcally = true;this.game.stage.scale.refresh();
+        
 		
 		//Set the physics for the game
 		game.physics.startSystem(Phaser.Physics.ARCADE);
