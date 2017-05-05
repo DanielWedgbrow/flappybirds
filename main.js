@@ -74,8 +74,8 @@ var mainState = {
 
         // Change the angle of the bird to -20° in 100 milliseconds
 
-        animation.to({angle: -200}, 50);
-        animation.to({angle: +200}, 50);
+        animation.to({angle: -20}, 125);
+        animation.to({angle: +20}, 125);
         // And start the animation
 
         animation.start();
@@ -132,7 +132,7 @@ var mainState = {
 };
 
 //Initialise Phaser, and create a 400px x 490px game
-var game = new Phaser.Game(400, 490);
+var game = new Phaser.Game(1000, 1250);
 
 //Add the 'mainState' and call it 'main'
 game.state.add('main', mainState);
