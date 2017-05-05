@@ -38,7 +38,7 @@ var mainState = {
 		this.pipes = game.add.group();
 		
 		//Timer for pipes
-		this.timer = game.time.events.loop(1600, this.addRowOfPipes, this);
+		this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
         
         //Score
 
@@ -46,7 +46,7 @@ var mainState = {
 
         this.labelScore = game.add.text(20, 20, "0",
 
-        { font: "30px Arial", fill: "#ffffff" });   
+        { font: "30px Arial", fill: "#ffba00" });   
 	},
 	
 	update: function() {
@@ -75,7 +75,7 @@ var mainState = {
         // Change the angle of the bird to -20° in 100 milliseconds
 
         animation.to({angle: -20}, 100);
-
+        animation.to({angle: +20}, 100);
         // And start the animation
 
         animation.start();
