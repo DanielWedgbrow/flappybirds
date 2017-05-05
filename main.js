@@ -74,8 +74,8 @@ var mainState = {
 
         // Change the angle of the bird to -20° in 100 milliseconds
 
-        animation.to({angle: -20}, 100);
-        animation.to({angle: +20}, 100);
+        animation.to({angle: -200}, 50);
+        animation.to({angle: +200}, 50);
         // And start the animation
 
         animation.start();
