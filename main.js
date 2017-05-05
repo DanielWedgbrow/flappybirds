@@ -38,7 +38,7 @@ var mainState = {
 		this.pipes = game.add.group();
 		
 		//Timer for pipes
-		this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
+		this.timer = game.time.events.loop(1600, this.addRowOfPipes, this);
         
         //Score
 
